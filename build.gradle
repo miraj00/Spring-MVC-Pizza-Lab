@@ -1,8 +1,10 @@
 plugins {
 	id 'java'
 	id 'war'
-	id 'org.springframework.boot' version '3.0.2'
-	id 'io.spring.dependency-management' version '1.1.0'
+//	id 'org.springframework.boot' version '3.0.2'
+//	id 'io.spring.dependency-management' version '1.1.0'
+  	id 'org.springframework.boot' version '2.7.8'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
 group = 'co.springmvcpizzalab'
@@ -18,8 +20,10 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
 
+	implementation 'javax.servlet:jstl'
+	providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.40'
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
