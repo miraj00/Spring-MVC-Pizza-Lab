@@ -1,4 +1,4 @@
-package co.springmvcpizzalab.pizzalab1;
+package co.springmvcpizzalab;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
