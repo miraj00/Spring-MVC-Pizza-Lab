@@ -48,7 +48,6 @@
 	  <br> <br>
 	  <textarea rows="4" cols="50" name="comment" form="userform">Enter text here...</textarea>
 	  
-	  
 	  <p><button type="submit">Calculate Price</button> 
 	  &nbsp; &nbsp;
 	  <a href="/">Never Mind </a>  </p>
