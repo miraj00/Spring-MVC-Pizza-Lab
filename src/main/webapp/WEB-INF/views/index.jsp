@@ -8,8 +8,21 @@
 	<meta charset="UTF-8">
 	<title>Home</title>
 	<link rel="stylesheet" href="/style.css" />
+	
+<style>
+.center {
+  margin-top: 150px;
+  margin-left: 400px;
+  width: 40%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>	
+	
 </head>
 <body>
+
+<div class="center">
 	<h1> Welcome to MVC's Pizza </h1>
 	
 		<h2> Specialty Pizzas </h2>
@@ -26,6 +39,8 @@
 		<br>
 		<h2> Leave a review </h2>
 			<a href="/review">Click here to leave a review</a>
+		<br> <br>	
+</div>
 
 </body>
 </html>

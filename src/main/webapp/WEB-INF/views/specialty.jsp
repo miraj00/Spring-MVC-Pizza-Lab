@@ -10,15 +10,29 @@
 <meta charset="UTF-8">
 <title>Specialty</title>
 <link rel="stylesheet" href="/style.css" />
+<style>
+.center {
+  margin-top: 150px;
+  margin-left: 400px;
+  width: 40%;
+  height: 400px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+
+
 </head>
 <body>
+<div class="center">
 	<h1> Specialty Pizza :  ${name}  </h1> 
 	
 	<h3> Name : ${name} </h3>
     <h3> Price : $ ${amount}  </h3>
 	
 	
-	<a href="/">Back to Homepage </a>
-	
+	<a href="/">Back to Homepage </a> 
+	<br> <br>
+</div>	
 </body>
 </html>
