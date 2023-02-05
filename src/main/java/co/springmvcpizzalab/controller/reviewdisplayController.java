@@ -12,11 +12,12 @@ public class reviewdisplayController {
 	@PostMapping("/review-form")
 	public String reviewdisplay(
 		@RequestParam String name, 
-	//	@RequestParam String comment,
+		@RequestParam String comment,
 		@RequestParam int rating, 
 		Model model ) {
 		
 		model.addAttribute("name", name );
+		model.addAttribute("comment", comment );
 		model.addAttribute("rating", rating);
 			return "reviewdisplay";		
 	}

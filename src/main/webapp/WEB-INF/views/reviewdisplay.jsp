@@ -21,9 +21,9 @@
 
 	<h1> Thanks for the review  </h1> 
 	
-	<h3> Your Name : ${name} </h3>
-    <h3> Comment : ${comment} </h3>
-    <h3> Rating : ${rating}  </h3>
+	<p> <b> Your Name : </b> ${name} </p>
+    <p> <b> Comment : </b> ${comment} </p>
+    <p> <b> Rating : </b> ${rating}  </p>
 	
 	
 	<a href="/">Back to Homepage </a> 

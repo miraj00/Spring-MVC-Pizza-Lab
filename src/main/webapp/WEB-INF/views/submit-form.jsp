@@ -19,12 +19,13 @@
 <body>
 <div class="center">
 
-	<h3> Size : ${size} </h3>
-    <h3> Toppings : ${toppings}  </h3>
+	<p> <b> Size : </b> ${size} </p>
+	
+    <p> <b> Toppings : </b> ${toppings}  </p>
     
-    <h3> Gluten-Free Crust : ${crust} </h3>
-    <h3> Specialty Instructions: ${comments}</h3>
-	<h3> Price : $ ${amount}</h3>
+    <p> <b> Gluten-Free Crust : </b> ${crust} </p>
+    <p> <b> Specialty Instructions: </b>  ${comments}</p>
+	<p> <b> Price : </b> $ ${amount}</p>
 
 <a href="/">Build another Pizza </a>  ||  &nbsp; &nbsp;
 <a href="/">Back to Homepage </a> 

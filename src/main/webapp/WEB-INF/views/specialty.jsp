@@ -27,8 +27,8 @@
 <div class="center">
 	<h1> Specialty Pizza :  ${name}  </h1> 
 	
-	<h3> Name : ${name} </h3>
-    <h3> Price : $ ${amount}  </h3>
+	<p> <b> Name : </b> ${name} </p>
+    <p> <b> Price :  </b> $ ${amount}  </p>
 	
 	
 	<a href="/">Back to Homepage </a> 

@@ -33,8 +33,8 @@
 	  <br> <br>
 	  
 	  <p>Comment : </p>	  
-	  <textarea rows="4" cols="50" name="comment" form="userform"></textarea>
-	  
+	  <textarea rows="4" cols="50" name="comment"></textarea>
+	  	  
 	  <p>Rating :</p>
 	  <input type="radio" id="five" name="rating" value="5">
 	  <label for="five">5(best)</label><br>

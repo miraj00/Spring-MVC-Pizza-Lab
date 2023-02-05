@@ -14,7 +14,7 @@ public class submitFormController {
 		@RequestParam String size, 
 		@RequestParam int topping,
 		@RequestParam(required=false) boolean crust, 
-	//	@RequestParam String comment, 
+		@RequestParam String comment, 
 		Model model ) {
 		
 		double price=0;
@@ -38,7 +38,7 @@ public class submitFormController {
 		model.addAttribute("size", size);
 		model.addAttribute("toppings", topping);
 		model.addAttribute("crust", crust);
-	//	model.addAttribute("comments", comment);
+		model.addAttribute("comments", comment);
 		model.addAttribute("amount", finalprice);
 		return "submit-form";
 	}
