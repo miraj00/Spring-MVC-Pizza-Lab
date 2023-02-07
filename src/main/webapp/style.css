@@ -19,3 +19,8 @@
   color: red;
   text-align: center;
 }
+
+html *
+{
+   font-family: verdana;
+}
