@@ -31,7 +31,13 @@
  	  <input type="text" id="topping" name="topping">
 	  <br> <br>
 	  
+	
 	  
+	  <ul>
+		<c:forEach items="${toppings}" var="list">
+			<li>${list}</li>
+		</c:forEach>
+	  </ul>
 	  
 	  <br> <br>
 	  <input type="checkbox" id="crust" name="crust" value="true">
