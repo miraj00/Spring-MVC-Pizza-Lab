@@ -5,15 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-.center {
-  margin-top: 150px;
-  margin-left: 400px;
-  width: 40%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-</style>
+
+<link rel="stylesheet" href="/style.css" />	
 
 </head>
 <body>

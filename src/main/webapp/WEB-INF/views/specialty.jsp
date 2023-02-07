@@ -10,7 +10,9 @@
 <meta charset="UTF-8">
 <title>Specialty</title>
 <link rel="stylesheet" href="/style.css" />
-<style>
+
+<!--  Another way to add css in jsp -->
+ <style>
 .center {
   margin-top: 150px;
   margin-left: 400px;
