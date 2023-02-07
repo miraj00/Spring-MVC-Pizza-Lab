@@ -23,7 +23,9 @@
     
     <p> <b> Gluten-Free Crust : </b> ${crust} </p>
     <p> <b> Specialty Instructions: </b>  ${comments}</p>
-	<p> <b> Price : </b> $ ${amount}</p>
+	
+	<p> <b> Price : </b> <fmt:formatNumber value="${amount}" pattern="#.00" /></p>
+
 	
 	<c:if test="${amount > 15}">
 	<h2 class="color"> Because your order meets the $ 15.00 minimum, you get 
