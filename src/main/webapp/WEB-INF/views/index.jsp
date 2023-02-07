@@ -15,9 +15,9 @@
 <div class="center">
 	<h1> Welcome to MVC's Pizza </h1>
 	
-	 <c:set var = "now" value ="<%=new java.util.Date()%>" />
+	<c:set var = "now" value ="<%=new java.util.Date()%>" />
 	 
-	<h3> Today's date : <fmt:formatDate type = "date" value = "${now}" /> </h3>
+	<h3> Today's date : <fmt:formatDate type = "day" value = "${day}" /> <fmt:formatDate type = "date" value = "${now}" /> </h3>
 		<img class="image-size" src="/pizza.jpg " alt="Pizza" />
 	
 		<h2> Specialty Pizzas </h2>

@@ -28,16 +28,23 @@
 	  <br> <br>
 	   
 	  <label for="toppings">How many toppings ?</label>
- 	  <input type="text" id="topping" name="topping">
-	  <br> <br>
-	  
-	
-	  
+ 	  <input type="text" id="topping" name="topping">  
+	  <br>  <h3> OR  </h3>  
+	  	  
+	  <h3> Check all the toppings you want from below list :</h3>
+
+<!--  	  
 	  <ul>
 		<c:forEach items="${toppings}" var="list">
 			<li>${list}</li>
 		</c:forEach>
 	  </ul>
+-->
+		
+		<c:forEach items="${toppingslist}" var="list">
+			<input name="toppings" type="checkbox" value="${list}"/> ${list.toppingName}  <br>
+		</c:forEach>
+	 
 	  
 	  <br> <br>
 	  <input type="checkbox" id="crust" name="crust" value="true">
