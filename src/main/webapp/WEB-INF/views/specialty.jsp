@@ -30,8 +30,7 @@
 	<h1> Specialty Pizza :  ${name}  </h1> 
 	
 	<p> <b> Name : </b> ${name} </p>
-    <p> <b> Price :  </b> $ ${amount}  </p>
-	
+    <p> <b> Price : </b> <fmt:formatNumber value="${amount}" pattern="#.00" /></p>	
 	
 	<a href="/">Back to Homepage </a> 
 	<br> <br>
