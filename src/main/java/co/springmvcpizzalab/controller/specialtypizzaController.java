@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 public class specialtypizzaController {
 
 	@RequestMapping("/specialty/{name}/{price}")
-	public String specialtyPizza(@PathVariable String name, @PathVariable String price, Model model) {
+	public String specialtyPizza(@PathVariable String name, @PathVariable String price, Model model) {		
 		
 		model.addAttribute("name", name );
 		model.addAttribute("amount", price);

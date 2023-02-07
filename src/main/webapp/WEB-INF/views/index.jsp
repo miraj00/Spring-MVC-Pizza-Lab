@@ -21,11 +21,18 @@
 		<img class="image-size" src="/pizza.jpg " alt="Pizza" />
 	
 		<h2> Specialty Pizzas </h2>
-		<ul>
+<!--  		<ul>
 			<li><a href="/specialty/Anchovy Lover's/10">Anchovy Lover's</a></li>
 			<li><a href="/specialty/Paleo Pizza/15"> Paleo Pizza</a></li>
 			<li><a href="/specialty/Dessert Pizza/20">Dessert Pizza </a></li>
 		</ul>
+-->
+		
+		<!--  Using c:forEach Loop thru List and using c:url generate urls -->	
+		<c:forEach items="${productlist}" var="product">
+		<a href = "<c:url value = "/specialty/${product.name}/${product.price}"/>">${product.name}</a> <br><br>
+		</c:forEach>
+
 
 		<br>
 		<h2> Custom Pizza </h2>
