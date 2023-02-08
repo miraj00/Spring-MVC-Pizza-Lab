@@ -19,47 +19,48 @@
 	
 	<form action="/submit-form" method="POST">
 	    
-	  <label for="size-input">Size</label>
-			<select name="size" id="size-input">
-				<option value="Small">Small</option>
-				<option value="Medium">Medium</option>
-				<option value="Large">Large</option>
-			</select>
-	  <br> <br>
-	   
-	  <label for="toppings">How many toppings ?</label>
- 	  <input type="text" id="topping" name="topping">  
-	  <br>  <h3> OR  </h3>  
-	  	  
-	  <h3> Check all the toppings you want from below list :</h3>
-
-<!--  	  
-	  <ul>
-		<c:forEach items="${toppings}" var="list">
-			<li>${list}</li>
-		</c:forEach>
-	  </ul>
--->
+		  <label for="size-input">Size</label>
+				<select name="size" id="size-input">
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+				</select>
+		  <br> <br>
+		   
+		  <label for="toppings">How many toppings ?</label>
+	 	  <input type="text" id="topping" name="topping">  
+		  <br>  <h3> OR  </h3>  
+		  	  
+		  <h3> Check all the toppings you want from below list :</h3>
+	
+	<!--  	  
+		  <ul>
+			<c:forEach items="${toppings}" var="list">
+				<li>${list}</li>
+			</c:forEach>
+		  </ul>
+	-->
 		
-		<c:forEach items="${toppingslist}" var="list">
-			<input name="toppings" type="checkbox" value="${list}"/> ${list.toppingName}  <br>
-		</c:forEach>
-	 
-	  
-	  <br> <br>
-	  <input type="checkbox" id="crust" name="crust" value="true">
-	  <label for="crust"> Gluten-Free Crust? ( $2.00 extra)</label><br>
-	  
-	      
-	  <br> <br>  
-	  Special Intructions (Optional)
-	  <br> <br>
-	  <textarea rows="4" cols="50" name="comment" >Enter text here...</textarea>
-	  
-	  <p><button type="submit">Calculate Price</button> 
-	  &nbsp; &nbsp;
-	  <a href="/">Never Mind </a>  </p>
-	       
+		  <!-- This shows the checkbox list of all toppings --> 	
+		  <c:forEach items="${toppingslist}" var="list">
+				<input name="toppings" type="checkbox" value="${list}"/> ${list.toppingName}  <br>
+		  </c:forEach>
+		 
+		  
+		  <br> <br>
+		  <input type="checkbox" id="crust" name="crust" value="true">
+		  <label for="crust"> Gluten-Free Crust? ( $2.00 extra)</label><br>
+		  
+		      
+		  <br> <br>  
+		  Special Intructions (Optional)
+		  <br> <br>
+		  <textarea rows="4" cols="50" name="comment" >Enter text here...</textarea>
+		  
+		  <p><button type="submit">Calculate Price</button> 
+		  &nbsp; &nbsp;
+		  <a href="/">Never Mind </a>  </p>
+		       
 	</form>
 	
 	

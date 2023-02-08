@@ -21,6 +21,13 @@
 	
     <p> <b> Toppings : </b> ${toppings}  </p>
     
+    
+    <ul>
+		<c:forEach items="${toppingsList}" var="x">
+			<li>${x}</li> <br>
+		</c:forEach>
+	</ul>
+    
     <p> <b> Gluten-Free Crust : </b> ${crust} </p>
     <p> <b> Specialty Instructions: </b>  ${comments}</p>
 	
