@@ -26,26 +26,35 @@
 					<option value="Large">Large</option>
 				</select>
 		  <br> <br>
-		   
+<!--  		   
 		  <label for="toppings">How many toppings ?</label>
 	 	  <input type="text" id="topping" name="topping">  
 		  <br>  <h3> OR  </h3>  
-		  	  
+-->		  	  
 		  <h3> Check all the toppings you want from below list :</h3>
 	
-	<!--  	  
+<!--  	  
 		  <ul>
 			<c:forEach items="${toppings}" var="list">
 				<li>${list}</li>
 			</c:forEach>
 		  </ul>
-	-->
+-->
 		
 		  <!-- This shows the checkbox list of all toppings --> 	
-		  <c:forEach items="${toppingslist}" var="list">
-				<input name="toppings" type="checkbox" value="${list}"/> ${list.toppingName}  <br>
+<!-- 		  <c:forEach items="${toppingslist}" var="list">
+				<input name="toppings" type="checkbox" value="${list.toppingName}"/> ${list.toppingName}  <br>
 		  </c:forEach>
-		 
+-->
+
+
+	 <!-- This shows the checkbox list of all toppings --> 	
+	 
+	 	  <c:forEach items="${toppingslist}" var="list">
+				<input name="toppings" type="checkbox" value="${list.toppingName}"/> ${list.toppingName} , ( $ ${list.price} extra ) <br>
+		
+		  </c:forEach>
+	 	 
 		  
 		  <br> <br>
 		  <input type="checkbox" id="crust" name="crust" value="true">

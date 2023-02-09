@@ -24,7 +24,7 @@ public class custompizzaController {
 		List<Toppings> topping = Collections.unmodifiableList(
 				Arrays.asList(
 						new Toppings("Pepperoni", 1),
-						new Toppings("Suasage", 2),
+						new Toppings("Sausage", 2),
 						new Toppings("Chicken", 1.5),
 						new Toppings("Mushroom", 0.5),
 						new Toppings("Olive", 0.75),
